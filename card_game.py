@@ -65,16 +65,14 @@ class Game:
         self.card_map = card_map
 
     def play(self, cards=cards):
-        "Run game once"
-        self.cards = cards
-        for player_id, letter in enumerate(self.cards):
+        for player_id, letter in enumerate(cards):
             successful = False
             attempts = 0
             while not successful:
                 current_card = self.card_map[letter]
                 if player_id == current_card["id"]:
                     successful = True
-                letter = self.cards[current_card["id"]]
+                letter = cards[current_card["id"]]
                 attempts += 1
                 if attempts > self.max_attempts:
                     return "Game over. Failed."
