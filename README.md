@@ -8,7 +8,7 @@ There is no way to exchange information after the game has begun. How can they a
 
 ## Our solution
 
-Basically, our strategy is for each player to begin on the card that _would_ be theirs, if the cards were not shuffled. If the card is not theirs, they go to the card in the position of the person whose name is written on the current card. This continues until they (1) find their card, or (2) exceed the maximum attemtps allowed, in which case the team loses.
+Basically, our strategy is for each player to begin on the card that _would_ be theirs, if the cards were not shuffled. If the card is not theirs, they go to the card in the position of the person whose name is written on the current card. This continues until they (1) find their card, or (2) exceed the maximum attempts allowed, in which case the team loses.
 
 ## Explanation
 
